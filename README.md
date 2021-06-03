@@ -3,4 +3,4 @@ This is a simple project to test my javascript skills.  This starts a timer and 
 
 Tech stack:
 
-I used HTML, SASS, and Javascript for this project.
+I used HTML, CSS (SASS), and Javascript for this project.
