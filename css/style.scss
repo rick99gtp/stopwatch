@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     border-radius: 10px;
     background-color: #ccc;
