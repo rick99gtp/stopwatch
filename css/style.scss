@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border-radius: 10px;
+    background-color: #ccc;
+    width: 30%;
+    margin: 0 auto;
+    padding: 30px;
+
+    .time {
+        text-align: center;
+        #timer {
+            font-size: 48px;
+            padding: 20px;
+        }
+    }
+    
+    .button-container {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        position: relative;
+    
+        .btn {
+            padding: 10px 15px;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100px;
+            transition: all .2s ease-in-out;
+            font-weight: 600;
+    
+            &.btn-start {
+                border: 2px solid green;
+                color: green;
+    
+                &:hover {
+                    background-color: green;
+                }
+            }
+        
+            &.btn-stop {
+                border: 2px solid red;
+                color: red;
+    
+                &:hover {
+                    background-color: red;
+                }
+            }
+        
+            &.btn-reset {
+                position: absolute;
+                right: 0;
+                border: 2px solid blue;
+                color: blue;
+    
+                &:hover {
+                    background-color: blue;
+                }
+            }
+    
+            &:hover {
+                background-color: transparent;
+                color: white;
+            }
+        }
+    
+        .disabled {
+            display: none;
+        }
+    }
+
+    .milli-line, .seconds-line, .minutes-line, .hours-line {
+        width: 0%;
+        height: 15px;
+    }
+
+    .milli-line {
+        background-color: red;
+        margin-top: 30px;
+    }
+
+    .seconds-line {
+        background-color: green;
+        transition: 1000ms linear;
+    }
+
+    .minutes-line {
+        background-color: blue;
+    }
+
+    .hours-line {
+        background-color: purple;
+    }
+}

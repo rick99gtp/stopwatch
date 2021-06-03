@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  border-radius: 10px;
+  background-color: #ccc;
+  width: 30%;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.container .time {
+  text-align: center;
+}
+
+.container .time #timer {
+  font-size: 48px;
+  padding: 20px;
+}
+
+.container .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container .button-container .btn {
+  padding: 10px 15px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  font-weight: 600;
+}
+
+.container .button-container .btn.btn-start {
+  border: 2px solid green;
+  color: green;
+}
+
+.container .button-container .btn.btn-start:hover {
+  background-color: green;
+}
+
+.container .button-container .btn.btn-stop {
+  border: 2px solid red;
+  color: red;
+}
+
+.container .button-container .btn.btn-stop:hover {
+  background-color: red;
+}
+
+.container .button-container .btn.btn-reset {
+  position: absolute;
+  right: 0;
+  border: 2px solid blue;
+  color: blue;
+}
+
+.container .button-container .btn.btn-reset:hover {
+  background-color: blue;
+}
+
+.container .button-container .btn:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.container .button-container .disabled {
+  display: none;
+}
+
+.container .milli-line, .container .seconds-line, .container .minutes-line, .container .hours-line {
+  width: 0%;
+  height: 15px;
+}
+
+.container .milli-line {
+  background-color: red;
+  margin-top: 30px;
+}
+
+.container .seconds-line {
+  background-color: green;
+  -webkit-transition: 1000ms linear;
+  transition: 1000ms linear;
+}
+
+.container .minutes-line {
+  background-color: blue;
+}
+
+.container .hours-line {
+  background-color: purple;
+}
+/*# sourceMappingURL=style.css.map */
